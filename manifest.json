@@ -1,0 +1,17 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "ico16.png",
+      "default_title": "sample",
+      "popup": "popup.html"
+   },
+   "description": "sample",
+   "icons": {
+      "128": "ico128.png",
+      "32": "ico128.png",
+      "64": "ico128.png"
+   },
+   "name": "sample",
+   "permissions": ["experimental"],
+   "version": "0.1"
+}
