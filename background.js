@@ -1,5 +1,9 @@
 
-var udp_socket_writer = function(string, host, port) {
+function log(data) {
+    console.log(data);
+}
+
+var udp_socket_writer = function(host, port, string) {
     var string2ArrayBufferAndWrite = function(str) {  // http://goo.gl/1eJnn
         var bb = new WebKitBlobBuilder();
         bb.append(str);

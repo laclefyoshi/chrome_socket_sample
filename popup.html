@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<div id="contents">
-</div>
+  <div id="contents">
+    <form id="info" name="info" action=".">
+      Host: <input type="text" id="host" name="host" /><br />
+      Port: <input type="text" id="port" name="port" /><br />
+      Message: <input type="text" id="message" name="message" />
+      <input type="button" id="button" value="send" />
+    </form>
+  </div>
+  <script type="text/javascript" src="popup.js"></script>
 </body>
 </html>
