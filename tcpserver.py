@@ -3,7 +3,7 @@
 # Copyright : (c) SAEKI Yoshiyasu
 # License   : MIT-style license
 #             <http://www.opensource.org/licenses/mit-license.php>
-# last updated: 2012/05/15
+# last updated: 2012/05/20
 
 import SocketServer
 
@@ -11,8 +11,8 @@ import SocketServer
 class TCPHandler(SocketServer.BaseRequestHandler):
     def handle(self):
         self.data = self.request.recv(1024).strip()
-        print "%s wrote: " % self.client_address[0]
-        print "\t%s" % self.data
+        print "%s wrote: " % self.client_address[0],
+        print "%s" % self.data
         self.request.send("You wrote: %s" % self.data)
 
 if __name__ == "__main__":
